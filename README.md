@@ -1,5 +1,9 @@
 # KotlinTutorial
 
+**日本語の情報**
+https://minegishirei.hatenablog.com/entry/2023/02/09/101751
+
+
 **Kotlinの公式リファレンスのリンク**
 
 https://kotlinlang.org/docs/kotlin-tour-welcome.html
@@ -74,3 +78,30 @@ fun main(args: Array<String>) {
 }
 ```
 
+## 条件分岐
+**if文**
+```kotlin
+ifを使い500円以上なら、ワンコインランチが食べれて、¥500未満だったら変えない条件分岐
+```kotlin
+fun main(args: Array<String>) {
+    val money = 400
+    if (money >= 500) {
+        println("ワンコインランチが食べれる")
+    } else {
+        println("ワンコインランチが食べれない")
+    }
+}
+```
+**when文**
+```kotlin
+fun main(args: Array<String>) {
+   // 複数の分岐を持つ条件式がある場合は、whenを使う。
+   val obj = "ぶどう"
+    when (obj) {
+         "りんご" -> println("りんごです")
+         "みかん" -> println("みかんです")
+         "ぶどう" -> println("ぶどうです")
+         else -> println("その他です")
+   }
+}
+```

@@ -1,9 +1,10 @@
 fun main(args: Array<String>) {
-// Mapを使用して果物の名前と値段を格納する
-    val fruits = mapOf("apple" to 100, "banana" to 200, "orange" to 300)
-// Mapの要素を順番に処理する
-    fruits.forEach { key, value ->
-        println("$key is $value yen.")
-    }
-    println(fruits)
+   // 複数の分岐を持つ条件式がある場合は、whenを使う。
+   val obj = "ぶどう"
+    when (obj) {
+         "りんご" -> println("りんごです")
+         "みかん" -> println("みかんです")
+         "ぶどう" -> println("ぶどうです")
+         else -> println("その他です")
+   }
 }
