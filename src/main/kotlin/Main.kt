@@ -1,6 +1,9 @@
 fun main(args: Array<String>) {
-    // 挨拶を5回繰り返す
-    for (i in 1..5) {
-        println("Hello, Kotlin!")
+// Mapを使用して果物の名前と値段を格納する
+    val fruits = mapOf("apple" to 100, "banana" to 200, "orange" to 300)
+// Mapの要素を順番に処理する
+    fruits.forEach { key, value ->
+        println("$key is $value yen.")
     }
+    println(fruits)
 }
