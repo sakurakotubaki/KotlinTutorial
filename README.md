@@ -105,3 +105,49 @@ fun main(args: Array<String>) {
    }
 }
 ```
+
+## 繰り返し処理
+**for文**
+```kotlin
+fun main(args: Array<String>) {
+    // for文を使って1から10までの数字を表示する
+    for (i in 1..10) {
+        println(i)
+    }
+}
+```
+**while文**
+```kotlin
+fun main(args: Array<String>) {
+    // while文を使って1から10までの数字を表示する
+    var i = 1
+    while (i <= 10) {
+        println(i)
+        i++
+    }
+}
+```
+
+## 関数
+````kotlin
+// 通常の関数
+fun hello() {
+    println("Hello, world!")
+}
+
+// 足し算する関数
+fun sum(a: Int, b: Int): Int {
+    return a + b
+}
+
+// ラムダ式で足し算する関数
+val sum2 = { a: Int, b: Int -> a + b }
+
+fun main() {
+    hello()
+    println("関数で実行-------------")
+    println(sum(1, 2))
+    println("ラムダ式で実行-------------")
+    println(sum2(1, 2))
+}
+````
