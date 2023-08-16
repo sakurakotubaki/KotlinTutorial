@@ -1,6 +1,7 @@
 # KotlinTutorial
 
 **日本語の情報**
+
 https://minegishirei.hatenablog.com/entry/2023/02/09/101751
 
 
@@ -54,6 +55,30 @@ fun main(args: Array<String>) {
     print(fruits)
 }
 ```
+**リストに型を指定する**
+```kotlin
+fun main() {
+    val items: List<String> = listOf("apple", "banana", "kiwifruit")
+    println(items)
+    val numbers: List<Int> = listOf(1, 2, 3)
+    println(numbers)
+}
+```
+
+**filterメソッド**
+要素から、条件に合うものだけを抽出したい場合は、filterメソッドを使う。
+````kotlin
+fun main() {
+    // filterとは、条件に合致する要素だけを取り出す関数
+    val items: List<String> = listOf("apple", "banana", "kiwifruit")
+    // appleという要素だけ条件式を使って取り出す
+    items.filter { it == "apple" }.forEach { println(it) }
+    // Listから、要素の長さが5以上のものだけを取り出す
+    items.filter { it.length >= 5 }.forEach { println(it) }
+}
+````
+
+
 ## Set
 Listは重複した要素を持つことができるが、Setは重複した要素を持つことができない。
 ```kotlin
