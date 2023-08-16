@@ -151,3 +151,18 @@ fun main() {
     println(sum2(1, 2))
 }
 ````
+
+## クラス
+```kotlin
+// このクラスは、Personクラスのインスタンスを生成し、greetメソッドを呼び出すだけのクラスです。
+class Person(val name: String, val age: Int) {
+    fun greet() {
+        println("私の名前は${name}です。年齢は${age}です。")
+    }
+}
+
+fun main() {
+    val person = Person("田中太郎", 20)
+    person.greet()
+}
+````
